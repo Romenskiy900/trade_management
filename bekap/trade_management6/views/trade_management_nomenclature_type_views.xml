@@ -1,0 +1,35 @@
+<odoo>
+
+    <record id="view_trade_management_nomenclature_type_list" model="ir.ui.view">
+        <field name="name">trade.management.nomenclature.type.list</field>
+        <field name="model">trade.management.nomenclature.type</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+           </list>
+        </field>
+    </record>
+
+    <record id="view_trade_management_nomenclature_type_form" model="ir.ui.view">
+        <field name="name">trade.management.nomenclature.type.form</field>
+        <field name="model">trade.management.nomenclature.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                   </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="action_trade_management_nomenclature_type" model="ir.actions.act_window">
+        <field name="name">Вид номенклатури</field>
+        <field name="res_model">trade.management.nomenclature.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,91 @@
+<odoo>
+
+    <menuitem id="menu_trade_management_root"
+              name="Trade management"
+              web_icon="trade_management,static/description/icon.png"
+              sequence="100"/>
+
+    <menuitem id="menu_trade_management_product_management"
+              name="Trade"
+              parent="menu_trade_management_root"
+              sequence="200"/>
+
+    <menuitem id="menu_trade_management_product_operations"
+              name="Operations"
+              parent="menu_trade_management_root"
+              sequence="300"/>
+
+    <menuitem id="menu_trade_management_product_report"
+              name="Reports"
+              parent="menu_trade_management_root"
+              sequence="400"/>
+
+
+    <menuitem id="menu_index_html_instruction"
+              name="Module instructions"
+              parent="menu_trade_management_root"
+              action="action_open_index_html"
+              sequence="500"/>
+
+    <menuitem id="menu_trade_management_price_set"
+              name="Pricing"
+              parent="menu_trade_management_product_management"
+              action="action_trade_management_price_set"
+              sequence="100"/>
+
+    <menuitem id="menu_trade_management_products"
+              name="Products"
+              parent="menu_trade_management_product_management"
+              action="action_trade_products"
+              sequence="200"/>
+
+
+
+     <menuitem id="menu_res_partner_simple"
+              name="Partner"
+              parent="menu_trade_management_product_management"
+              action="action_res_partner_simple"
+              sequence="400"/>
+
+
+    <menuitem id="menu_trade_management_receipt"
+              name="Arrival of goods"
+              parent="menu_trade_management_product_operations"
+              action="action_trade_management_receipt"
+              sequence="100"/>
+
+    <menuitem id="menu_trade_management_sales"
+              name="Sales registration"
+              parent="menu_trade_management_product_operations"
+              action="action_trade_management_sales"
+              sequence="200"/>
+
+    <menuitem id="menu_product_category_wizard"
+              name="Change Category"
+              parent="menu_trade_management_product_operations"
+              action="action_product_category_wizard"
+              sequence="200"/>
+
+
+
+    <menuitem id="menu_sales_pivot"
+              name="Sales analytics"
+              parent="menu_trade_management_product_report"
+              action="action_sales_pivot"
+              sequence="100"/>
+
+    <menuitem id="menu_price_report"
+          name="Commodity price chart"
+          parent="menu_trade_management_product_report"
+          action="action_trade_management_price_set_line_graph"
+          sequence="200"/>
+
+
+    <menuitem id="menu_receipt_report_wizard"
+              name="Receipt report wizard"
+              parent="menu_trade_management_product_report"
+              action="action_receipt_report_wizard"
+              sequence="300"/>
+
+
+</odoo>

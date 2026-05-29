@@ -1,0 +1,98 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- PRICE_SET_1 -->
+        <record id="price_set_1"
+                model="trade.management.price.set">
+
+            <field name="date">2026-01-01</field>
+
+        </record>
+
+        <record id="price_set_1_line_1"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_1"/>
+
+            <field name="product_id" ref="prod_milk"/>
+            <field name="price">10</field>
+
+        </record>
+
+        <record id="price_set_1_line_2"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_1"/>
+
+            <field name="product_id" ref="prod_bread"/>
+            <field name="price">20</field>
+
+        </record>
+
+
+        <!-- PRICE_SET_2 -->
+        <record id="price_set_2"
+                model="trade.management.price.set">
+
+            <field name="date">2026-02-01</field>
+
+        </record>
+
+        <record id="price_set_2_line_1"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_2"/>
+
+            <field name="product_id" ref="prod_water"/>
+            <field name="price">30</field>
+
+        </record>
+
+        <record id="price_set_2_line_2"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_2"/>
+
+            <field name="product_id" ref="prod_juice"/>
+            <field name="price">40</field>
+
+        </record>
+
+
+
+        <!-- PRICE_SET_3 -->
+        <record id="price_set_3"
+                model="trade.management.price.set">
+
+            <field name="date">2026-03-01</field>
+
+        </record>
+
+        <record id="price_set_3_line_1"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_3"/>
+
+            <field name="product_id" ref="prod_phone"/>
+            <field name="price">50</field>
+
+        </record>
+
+        <record id="price_set_3_line_2"
+                model="trade.management.price.set.line">
+
+            <field name="price_set_id"
+                   ref="price_set_3"/>
+
+            <field name="product_id" ref="prod_laptop"/>
+            <field name="price">60</field>
+
+        </record>
+
+    </data>
+</odoo>

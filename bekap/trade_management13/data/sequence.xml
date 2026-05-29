@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+
+        <record id="seq_trade_document" model="ir.sequence">
+            <field name="name">Trade Document</field>
+            <field name="code">trade.document.common</field>
+            <field name="prefix"></field>
+            <field name="padding">5</field>
+        </record>
+
+    </data>
+</odoo>

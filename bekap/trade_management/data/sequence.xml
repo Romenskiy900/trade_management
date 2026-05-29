@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="seq_trade_management_price_set" model="ir.sequence">
+
+        <field name="name">Trade Management Price Set</field>
+
+        <field name="code">trade.management.price.set</field>
+
+        <field name="prefix"></field>
+
+        <field name="padding">5</field>
+
+    </record>
+
+</odoo>

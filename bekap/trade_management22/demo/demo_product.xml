@@ -1,0 +1,42 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="prod_milk" model="product.template">
+            <field name="name">Milk 1L</field>
+            <field name="categ_id" ref="cat_food"/>
+            <field name="list_price">38</field>
+        </record>
+
+        <record id="prod_bread" model="product.template">
+            <field name="name">Bread</field>
+            <field name="categ_id" ref="cat_food"/>
+            <field name="list_price">25</field>
+        </record>
+
+        <record id="prod_water" model="product.template">
+            <field name="name">Mineral Water</field>
+            <field name="categ_id" ref="cat_beverages"/>
+            <field name="list_price">120</field>
+        </record>
+
+        <record id="prod_juice" model="product.template">
+            <field name="name">Apple Juice</field>
+            <field name="categ_id" ref="cat_beverages"/>
+            <field name="list_price">220</field>
+        </record>
+
+        <record id="prod_phone" model="product.template">
+            <field name="name">Basic Smartphone</field>
+            <field name="categ_id" ref="cat_electronics"/>
+            <field name="list_price">210</field>
+        </record>
+
+        <record id="prod_laptop" model="product.template">
+            <field name="name">Office Laptop</field>
+            <field name="categ_id" ref="cat_electronics"/>
+            <field name="list_price">230</field>
+        </record>
+
+
+    </data>
+</odoo>

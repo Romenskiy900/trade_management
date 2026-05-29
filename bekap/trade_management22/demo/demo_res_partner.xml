@@ -1,0 +1,29 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="partner_global_trade" model="res.partner">
+            <field name="name">Global Trade LLC</field>
+            <field name="email">info@globaltrade.com</field>
+            <field name="phone">+1 202 555 0200</field>
+            <field name="city">Los Angeles</field>
+            <field name="company_type">company</field>
+        </record>
+
+        <record id="partner_smart_market" model="res.partner">
+            <field name="name">Smart Market Inc</field>
+            <field name="email">contact@smartmarket.com</field>
+            <field name="phone">+1 303 555 0110</field>
+            <field name="city">Chicago</field>
+            <field name="company_type">company</field>
+        </record>
+
+        <record id="partner_fresh_foods" model="res.partner">
+            <field name="name">Fresh Foods Ltd</field>
+            <field name="email">sales@freshfoods.com</field>
+            <field name="phone">+1 404 555 0199</field>
+            <field name="city">Miami</field>
+            <field name="company_type">company</field>
+        </record>
+
+    </data>
+</odoo>

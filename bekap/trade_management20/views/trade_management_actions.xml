@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_open_index_html" model="ir.actions.act_url">
+        <field name="name">Документація модуля</field>
+        <field name="url">/trade_management/static/html/index.html</field>
+        <field name="target">self</field> <!-- self откроет внутри интерфейса Odoo, new — в новой вкладке -->
+    </record>
+</odoo>

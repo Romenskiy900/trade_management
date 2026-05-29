@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- USERS -->
+        <record id="user_patient_1" model="res.users">
+            <field name="name">Іван Іваненко</field>
+            <field name="login">ivan</field>
+            <field name="password">ivan</field>
+        </record>
+
+        <record id="user_patient_2" model="res.users">
+            <field name="name">Марія Петренко</field>
+            <field name="login">maria</field>
+            <field name="password">maria</field>
+        </record>
+
+        <record id="user_patient_3" model="res.users">
+            <field name="name">Олексій Сидоренко</field>
+            <field name="login">oleksii</field>
+            <field name="password">oleksii</field>
+        </record>
+
+        <!-- ASSIGN GROUPS (правильный способ) -->
+        <function model="res.users" name="write">
+            <value eval="[[ref('user_patient_1')], {'groups_id': [(4, ref('base.group_user')), (4, ref('hr_hospital.group_patient'))]}]"/>
+        </function>
+
+        <function model="res.users" name="write">
+            <value eval="[[ref('user_patient_2')], {'groups_id': [(4, ref('base.group_user')), (4, ref('hr_hospital.group_patient'))]}]"/>
+        </function>
+
+        <function model="res.users" name="write">
+            <value eval="[[ref('user_patient_3')], {'groups_id': [(4, ref('base.group_user')), (4, ref('hr_hospital.group_patient'))]}]"/>
+        </function>
+
+        <!-- PATIENTS -->
+        <record id="patient_1" model="hr.hospital.patient">
+            <field name="name">Іван Іваненко</field>
+            <field name="user_id" ref="user_patient_1"/>
+        </record>
+
+        <record id="patient_2" model="hr.hospital.patient">
+            <field name="name">Марія Петренко</field>
+            <field name="user_id" ref="user_patient_2"/>
+        </record>
+
+        <record id="patient_3" model="hr.hospital.patient">
+            <field name="name">Олексій Сидоренко</field>
+            <field name="user_id" ref="user_patient_3"/>
+        </record>
+
+    </data>
+</odoo>

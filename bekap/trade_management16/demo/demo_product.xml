@@ -1,0 +1,83 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="prod_milk" model="product.template">
+            <field name="name">Milk 1L</field>
+            <field name="categ_id" ref="cat_food"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">20</field>
+
+        </record>
+
+        <record id="prod_bread" model="product.template">
+            <field name="name">Wheat Bread</field>
+            <field name="categ_id" ref="cat_food"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">25</field>
+        </record>
+
+        <record id="prod_water" model="product.template">
+            <field name="name">Mineral Water</field>
+            <field name="categ_id" ref="cat_beverages"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">120</field>
+        </record>
+
+        <record id="prod_juice" model="product.template">
+            <field name="name">Apple Juice</field>
+            <field name="categ_id" ref="cat_beverages"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">220</field>
+        </record>
+
+        <record id="prod_phone" model="product.template">
+            <field name="name">Basic Smartphone</field>
+            <field name="categ_id" ref="cat_electronics"/>
+            <field name="sale_type">wholesale</field>
+            <field name="list_price">210</field>
+        </record>
+
+        <record id="prod_laptop" model="product.template">
+            <field name="name">Office Laptop</field>
+            <field name="categ_id" ref="cat_electronics"/>
+            <field name="sale_type">wholesale</field>
+            <field name="list_price">230</field>
+        </record>
+
+        <record id="prod_shirt" model="product.template">
+            <field name="name">White T-Shirt</field>
+            <field name="categ_id" ref="cat_clothing"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">240</field>
+        </record>
+
+        <record id="prod_jeans" model="product.template">
+            <field name="name">Classic Jeans</field>
+            <field name="categ_id" ref="cat_clothing"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">204</field>
+        </record>
+
+        <record id="prod_sneakers" model="product.template">
+            <field name="name">Sport Sneakers</field>
+            <field name="categ_id" ref="cat_shoes"/>
+            <field name="sale_type">retail</field>
+            <field name="list_price">20</field>
+        </record>
+
+        <record id="prod_oil" model="product.template">
+            <field name="name">Engine Oil 5W-30</field>
+            <field name="categ_id" ref="cat_auto"/>
+            <field name="sale_type">wholesale</field>
+            <field name="list_price">20</field>
+        </record>
+
+        <record id="prod_wheat" model="product.template">
+            <field name="name">Wheat Grade 1</field>
+            <field name="categ_id" ref="cat_agro"/>
+            <field name="sale_type">wholesale</field>
+            <field name="list_price">15</field>
+        </record>
+
+    </data>
+</odoo>

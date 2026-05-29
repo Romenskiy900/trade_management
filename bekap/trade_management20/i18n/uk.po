@@ -1,0 +1,197 @@
+# Translation of trade_management module to Ukrainian
+msgid ""
+msgstr ""
+"Project-Id-Version: trade_management\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_document_mixin
+msgid "Document numbering mixin"
+msgstr "Міксин нумерації документів"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_price_set
+msgid "Price Set"
+msgstr "Встановлення цін"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_price_set_line
+msgid "Рядок встановлення цін"
+msgstr "Рядок встановлення цін"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_receipt
+msgid "Надходження товарів"
+msgstr "Надходження товарів"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_receipt_line
+msgid "Receipt line"
+msgstr "Рядок надходження"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_sales
+msgid "Реєстрація продажів"
+msgstr "Реєстрація продажів"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_management_sales_line
+msgid "Sales line"
+msgstr "Рядок продажу"
+
+#. module: trade_management
+#: model:ir.model,name:trade_management.model_trade_product
+msgid "Product template extension"
+msgstr "Розширення товару"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_document_mixin__number
+msgid "Number"
+msgstr "Номер"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_document_mixin__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_price_set__date
+msgid "Date"
+msgstr "Дата"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_price_set_line__price
+msgid "Price"
+msgstr "Ціна"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_price_set_line__product_id
+msgid "Product"
+msgstr "Товар"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt__pertner_id
+msgid "Partner"
+msgstr "Контрагент"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_sales_line__quantity
+msgid "Quantity"
+msgstr "Кількість"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_sales_line__price
+msgid "Price"
+msgstr "Ціна"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_sales_line__sum
+msgid "Sum"
+msgstr "Сума"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__product_template__sale_type__retail
+msgid "Retail"
+msgstr "Роздріб"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__product_template__sale_type__wholesale
+msgid "Wholesale"
+msgstr "Опт"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_root
+msgid "Trade management"
+msgstr "Управління торгівлею"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_management
+msgid "Trade"
+msgstr "Торгівля"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_operations
+msgid "Operations"
+msgstr "Операції"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_report
+msgid "Reports"
+msgstr "Звіти"
+
+#. module: trade_management
+#: model:ir.actions.act_window,name:trade_management.action_trade_products
+msgid "Product"
+msgstr "Товари"
+
+#. module: trade_management
+#: model:ir.actions.act_window,name:trade_management.action_trade_management_receipt
+msgid "Arrival of goods"
+msgstr "Надходження товарів"
+
+#. module: trade_management
+#: model:ir.actions.act_window,name:trade_management.action_trade_management_sales
+msgid "Sales registration"
+msgstr "Реєстрація продажів"
+
+#. module: trade_management
+#: model:ir.actions.act_window,name:trade_management.action_sales_pivot
+msgid "Sale"
+msgstr "Продажі"
+
+#. module: trade_management
+#: model:ir.actions.act_window,name:trade_management.action_trade_management_price_set
+msgid "Pricing"
+msgstr "Ціноутворення"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_management
+msgid "Trade"
+msgstr "Торгівля"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_operations
+msgid "Operations"
+msgstr "Операції"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_product_report
+msgid "Reports"
+msgstr "Звіти"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_price_set
+msgid "Pricing"
+msgstr "Ціноутворення"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_products
+msgid "Products"
+msgstr "Товари"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_res_partner_simple
+msgid "Partner"
+msgstr "Контрагенти"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_receipt
+msgid "Arrival of goods"
+msgstr "Надходження товарів"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_trade_management_sales
+msgid "Sales registration"
+msgstr "Реєстрація продажів"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_sales_pivot
+msgid "Sales analytics"
+msgstr "Аналітика продажів"
+
+#. module: trade_management
+#: model:ir.ui.menu,name:trade_management.menu_price_report
+msgid "Commodity price chart"
+msgstr "Графік цін товарів"

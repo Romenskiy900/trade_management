@@ -1,0 +1,51 @@
+<odoo>
+
+    <!-- OPEN WIZARD -->
+    <record id="action_visit_report_wizard" model="ir.actions.act_window">
+        <field name="name">Звіт по візитах</field>
+        <field name="res_model">visit.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- PATIENT -->
+    <record id="action_visit_report_patient" model="ir.actions.server">
+        <field name="name">Звіт по візитах</field>
+        <field name="model_id" ref="model_hr_hospital_patient"/>
+        <field name="binding_model_id" ref="model_hr_hospital_patient"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">
+action = {
+    'type': 'ir.actions.act_window',
+    'res_model': 'visit.report.wizard',
+    'view_mode': 'form',
+    'target': 'new',
+    'context': {
+        'default_patient_ids': [(6, 0, records.ids)]
+    }
+}
+        </field>
+    </record>
+
+    <!-- DOCTOR -->
+    <record id="action_visit_report_doctor" model="ir.actions.server">
+        <field name="name">Звіт по візитах</field>
+        <field name="model_id" ref="model_hr_hospital_doctor"/>
+        <field name="binding_model_id" ref="model_hr_hospital_doctor"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">
+action = {
+    'type': 'ir.actions.act_window',
+    'res_model': 'visit.report.wizard',
+    'view_mode': 'form',
+    'target': 'new',
+    'context': {
+        'default_doctor_ids': [(6, 0, records.ids)]
+    }
+}
+        </field>
+    </record>
+
+</odoo>

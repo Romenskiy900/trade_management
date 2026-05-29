@@ -1,0 +1,73 @@
+<odoo>
+
+
+        <record id="view_product_form_only_name" model="ir.ui.view">
+            <field name="name">product.template.form.only.name</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//sheet" position="replace">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="sale_type"/>
+                        </group>
+                    </sheet>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <record id="view_product_kanban_sale_type" model="ir.ui.view">
+            <field name="name">product.template.kanban.sale_type</field>
+            <field name="model">product.template</field>
+
+            <field name="arch" type="xml">
+                <kanban>
+
+                    <field name="name"/>
+                    <field name="sale_type"/>
+
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+
+                                <div>
+                                    <strong>
+                                        <field name="name"/>
+                                    </strong>
+                                </div>
+
+                                <div class="mt8">
+                                    Тип продажу:
+                                    <field name="sale_type"/>
+                                </div>
+
+                            </div>
+                        </t>
+                    </templates>
+
+                </kanban>
+            </field>
+        </record>
+
+
+        <record id="action_trade_products" model="ir.actions.act_window">
+            <field name="name">Товары (Trade)</field>
+            <field name="res_model">product.template</field>
+
+            <field name="view_mode">kanban,list,form</field>
+
+            <field name="context">{'group_by': 'sale_type'}</field>
+
+            <field name="views" eval="[
+                (ref('view_product_kanban_sale_type'), 'kanban'),
+                (ref('product.product_template_tree_view'), 'list'),
+                (ref('product.product_template_only_form_view'), 'form')
+            ]"/>
+        </record>
+
+
+</odoo>

@@ -1,0 +1,36 @@
+<odoo>
+
+    <menuitem id="menu_hr_hospital_root"
+              name="Лікарняний облік"
+              sequence="1"/>
+
+    <menuitem id="menu_hr_hospital_operations"
+              name="Операції"
+              parent="menu_hr_hospital_root"
+              sequence="2"/>
+
+    <menuitem id="menu_hr_hospital_doctor"
+              name="Лікарі"
+              parent="menu_hr_hospital_operations"
+              action="action_hr_hospital_doctor"
+              sequence="3"/>
+
+    <menuitem id="menu_hr_hospital_patient"
+              name="Пацієнти"
+              parent="menu_hr_hospital_operations"
+              action="action_hr_hospital_patient"
+              sequence="4"/>
+
+        <menuitem id="menu_hr_hospital_disease"
+              name="Хвороби"
+              parent="menu_hr_hospital_operations"
+              action="action_hr_hospital_disease"
+              sequence="5"/>
+
+            <menuitem id="menu_hr_hospital_visit"
+              name="Візити"
+              parent="menu_hr_hospital_operations"
+              action="action_hr_hospital_visit"
+              sequence="6"/>
+
+</odoo>

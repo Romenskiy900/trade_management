@@ -1,0 +1,26 @@
+<odoo>
+
+    <menuitem id="menu_trade_management_root"
+              name="Управління торгівлею"
+              web_icon="trade_management,static/description/icon.png"
+              sequence="1"/>
+
+    <menuitem id="menu_trade_management_operations"
+              name="Управління товарами"
+              parent="menu_trade_management_root"
+              sequence="2"/>
+
+    <menuitem id="menu_trade_management_nomenclature"
+              name="Номенклатура"
+              parent="menu_trade_management_operations"
+              action="action_trade_management_nomenclature"
+              sequence="3"/>
+
+
+      <menuitem id="menu_trade_management_price_set"
+              name="Встановлення цін"
+              parent="menu_trade_management_operations"
+              action="action_trade_management_price_set"
+              sequence="3"/>
+
+</odoo>
