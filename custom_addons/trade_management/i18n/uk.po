@@ -60,6 +60,11 @@ msgstr "Найменування"
 
 #. module: trade_management
 #: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt_line__product_id
+msgid "roduct_id"
+msgstr "Товар"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt_line__quantity
 msgid "quantity"
 msgstr "Кількість"
 
@@ -159,6 +164,11 @@ msgid "Quantity"
 msgstr "Кількість"
 
 #. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_sales_line__currency_id
+msgid "currency_id"
+msgstr "Валюта"
+
+#. module: trade_management
 #: model:ir.model.fields,field_description:trade_management.field_trade_management_sales_line__price
 msgid "Price"
 msgstr "Ціна"
@@ -177,6 +187,8 @@ msgstr "Роздріб"
 #: model:ir.model.fields.selection,name:trade_management.selection__product_template__sale_type__wholesale
 msgid "Wholesale"
 msgstr "Опт"
+
+
 
 #. module: trade_management
 #: model:ir.ui.menu,name:trade_management.menu_trade_management_root
@@ -293,6 +305,10 @@ msgstr "Надходження товарів"
 msgid "Module instructions"
 msgstr "Інструкції модуля"
 
+#. module: partner_email_test
+#: model:ir.actions.act_window,name:partner_email_test.action_res_partner_simple
+msgid "Partner"
+msgstr "Партнер"
 
 #. module: trade_management
 #: model_terms:ir.ui.view,arch_db:trade_management.view_product_category_wizard_form
@@ -308,6 +324,11 @@ msgstr "Скасувати"
 #: model:ir.model.fields,field_description:trade_management.field_product_category_wizard__categ_id
 msgid "Category"
 msgstr "Категорія"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_res_partner__is_trade_partner
+msgid "Trade counterparty"
+msgstr "Торговий контрагент"
 
 #. module: trade_management
 #: model:ir.model.fields,field_description:trade_management.field_product_category_wizard__product_ids
@@ -359,3 +380,49 @@ msgstr "Дата від"
 #: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt_report_wizard__date_to
 msgid "Date To"
 msgstr "Дата до"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt__line_ids
+msgid "line_ids"
+msgstr "Товари"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt__state
+msgid "state"
+msgstr "Статус"
+
+#. module: trade_management
+#: model:ir.model.fields,field_description:trade_management.field_trade_management_receipt__stock_picking_id
+msgid "stock_picking_id"
+msgstr "Складське переміщення"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__trade_management_receipt__state__draft
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__trade_management_receipt__state__posted
+msgid "Posted"
+msgstr "Проведено"
+
+#. module: trade_management
+#: model_terms:ir.ui.view,arch_db:trade_management.view_trade_management_receipt_form
+msgid "Post"
+msgstr "Провести"
+
+#. module: trade_management
+#: model_terms:ir.ui.view,arch_db:trade_management.view_trade_management_sales_form
+msgid "Post"
+msgstr "Провести"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__trade_management_sales__state__draft
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: trade_management
+#: model:ir.model.fields.selection,name:trade_management.selection__trade_management_sales__state__posted
+msgid "Posted"
+msgstr "Проведено"
+

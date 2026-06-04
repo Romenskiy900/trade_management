@@ -1,23 +1,23 @@
 <odoo>
+    <data noupdate="1">
+        <!-- COMMODITIES SPECIALIST -->
+        <record id="group_meneger" model="res.groups">
+            <field name="name">Meneger</field>
+        </record>
 
-    <!-- COMMODITIES SPECIALIST -->
-    <record id="group_meneger" model="res.groups">
-        <field name="name">Meneger</field>
-    </record>
-
-    <!-- ANALYST -->
-    <record id="group_analyst" model="res.groups">
-        <field name="name">Analyst</field>
-    </record>
+        <!-- ANALYST -->
+        <record id="group_analyst" model="res.groups">
+            <field name="name">Analyst</field>
+        </record>
 
 
-    <!-- ADMIN -->
-    <record id="group_trade_admin" model="res.groups">
-        <field name="name">Trade Administrator</field>
-        <field name="implied_ids" eval="[
+        <!-- ADMIN -->
+        <record id="group_trade_admin" model="res.groups">
+            <field name="name">Trade Administrator</field>
+            <field name="implied_ids" eval="[
             (4, ref('group_meneger')),
             (4, ref('group_analyst'))
         ]"/>
-    </record>
-
+        </record>
+    </data>
 </odoo>

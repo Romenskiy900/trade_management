@@ -1,5 +1,5 @@
-from odoo import models, fields, api
-from odoo.exceptions import UserError, ValidationError
+from odoo import models, fields
+from odoo.exceptions import UserError
 
 
 class TradeReceipt(models.Model):
@@ -60,7 +60,7 @@ class TradeReceipt(models.Model):
                         move_line.quantity = move.product_uom_qty
 
             # Validate picking and process related wizards if needed
-            res = picking.with_context(
+            picking.with_context(
                 button_validate_picking_ids=[picking.id],
                 skip_backorder=True,
                 picking_label_ids=False

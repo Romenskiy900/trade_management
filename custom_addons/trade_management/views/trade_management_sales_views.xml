@@ -50,6 +50,7 @@
                                     <field name="price" force_save="1" readonly="1"/>
                                     <field name="sum"/>
                                     <field name="quantity"/>
+                                    <field name="currency_id"/>
                                 </list>
 
                             </field>
