@@ -12,7 +12,7 @@
             <field name="sales_id"
                    ref="sales_1"/>
 
-            <field name="product_id" ref="prod_milk"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_milk'))]"/>
             <field name="quantity">5</field>
 
             <field name="price">10</field>
@@ -25,7 +25,7 @@
             <field name="sales_id"
                    ref="sales_1"/>
 
-            <field name="product_id" ref="prod_bread"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_bread'))]"/>
 
             <field name="quantity">3</field>
 
@@ -44,7 +44,7 @@
             <field name="sales_id"
                    ref="sales_2"/>
 
-            <field name="product_id" ref="prod_water"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_water'))]"/>
             <field name="quantity">5</field>
 
             <field name="price">30</field>
@@ -57,7 +57,7 @@
             <field name="sales_id"
                    ref="sales_2"/>
 
-            <field name="product_id" ref="prod_juice"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_juice'))]"/>
 
             <field name="quantity">3</field>
 
@@ -77,7 +77,7 @@
             <field name="sales_id"
                    ref="sales_3"/>
 
-            <field name="product_id" ref="prod_phone"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_phone'))]"/>
             <field name="quantity">5</field>
 
             <field name="price">50</field>
@@ -90,7 +90,7 @@
             <field name="sales_id"
                    ref="sales_3"/>
 
-            <field name="product_id" ref="prod_laptop"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_laptop'))]"/>
 
             <field name="quantity">3</field>
 

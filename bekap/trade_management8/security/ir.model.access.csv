@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_price_set,price_set,model_trade_management_price_set,base.group_user,1,1,1,1
-access_price_set_line,price_set_line,model_trade_management_price_set_line,base.group_user,1,1,1,1
-access_receipt,receipt,model_trade_management_receipt,base.group_user,1,1,1,1
-access_receipt_line,receipt_line,model_trade_management_receipt_line,base.group_user,1,1,1,1
-access_sales,sales,model_trade_management_sales,base.group_user,1,1,1,1
-access_sales_line,sales_line,model_trade_management_sales_line,base.group_user,1,1,1,1
-access_trade_product,access_trade_product,product.model_product_template,,1,1,1,1

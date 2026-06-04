@@ -14,7 +14,7 @@ class TradePriceSetLine(models.Model):
 
     # product for which price is being defined
     product_id = fields.Many2one(
-        'product.template',
+        'product.product',
         string='Product',
         required=True
     )
@@ -33,21 +33,21 @@ class TradePriceSetLine(models.Model):
 
     # validation rule executed before saving record
     @api.constrains('price')
-    def _check_quantity_positive(self):
+    def _check_price_positive(self):
         for rec in self:
             if rec.price <= 0:
                 raise ValidationError("The price must be greater than zero!")
 
-    @api.model_create_multi
-    def create(self, vals_list):
-        records = super().create(vals_list)
-        for rec in records:
-            rec.product_id.list_price = rec.price
-        return records
-
-    def write(self, vals):
-        res = super().write(vals)  # update current record in database
-        if 'price' in vals or 'product_id' in vals:
-            for rec in self:
-                rec.product_id.list_price = rec.price
-        return res
+    # @api.model_create_multi
+    # def create(self, vals_list):
+    #     records = super().create(vals_list)
+    #     for rec in records:
+    #         rec.product_id.list_price = rec.price
+    #     return records
+    #
+    # def write(self, vals):
+    #     res = super().write(vals)  # update current record in database
+    #     if 'price' in vals or 'product_id' in vals:
+    #         for rec in self:
+    #             rec.product_id.list_price = rec.price
+    #     return res

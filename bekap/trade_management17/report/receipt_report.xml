@@ -1,9 +1,0 @@
-<odoo>
-    <record id="action_receipt_report" model="ir.actions.report">
-        <field name="name">Receipt Report</field>
-        <field name="model">trade.management.receipt</field>
-        <field name="report_type">qweb-pdf</field>
-        <field name="report_name">trade_management.receipt_report_template</field>
-        <field name="report_file">trade_management.receipt_report_template</field>
-    </record>
-</odoo>

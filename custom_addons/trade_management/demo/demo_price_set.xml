@@ -1,4 +1,6 @@
-<odoo>
+
+
+ <odoo>
     <data noupdate="1">
 
         <!-- PRICE_SET_1 -->
@@ -15,7 +17,7 @@
             <field name="price_set_id"
                    ref="price_set_1"/>
 
-            <field name="product_id" ref="prod_milk"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_milk'))]"/>
             <field name="price">10</field>
 
         </record>
@@ -26,7 +28,7 @@
             <field name="price_set_id"
                    ref="price_set_1"/>
 
-            <field name="product_id" ref="prod_bread"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_bread'))]"/>
             <field name="price">20</field>
 
         </record>
@@ -46,7 +48,7 @@
             <field name="price_set_id"
                    ref="price_set_2"/>
 
-            <field name="product_id" ref="prod_water"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_water'))]"/>
             <field name="price">30</field>
 
         </record>
@@ -57,7 +59,7 @@
             <field name="price_set_id"
                    ref="price_set_2"/>
 
-            <field name="product_id" ref="prod_juice"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_juice'))]"/>
             <field name="price">40</field>
 
         </record>
@@ -78,7 +80,7 @@
             <field name="price_set_id"
                    ref="price_set_3"/>
 
-            <field name="product_id" ref="prod_phone"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_phone'))]"/>
             <field name="price">50</field>
 
         </record>
@@ -89,7 +91,7 @@
             <field name="price_set_id"
                    ref="price_set_3"/>
 
-            <field name="product_id" ref="prod_laptop"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_laptop'))]"/>
             <field name="price">60</field>
 
         </record>

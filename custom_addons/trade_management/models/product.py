@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class TradeProduct(models.Model):
@@ -9,3 +9,11 @@ class TradeProduct(models.Model):
         ('wholesale', 'Wholesale'),
     ], string='Type of sale')
 
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            # Make products storable by default
+            if 'is_storable' not in vals:
+                vals['is_storable'] = True
+
+        return super(TradeProduct, self).create(vals_list)

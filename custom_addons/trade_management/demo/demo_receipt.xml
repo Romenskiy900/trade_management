@@ -18,7 +18,7 @@
             <field name="receipt_id"
                    ref="receipt_1"/>
 
-            <field name="product_id" ref="prod_milk"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_milk'))]"/>
             <field name="quantity">100</field>
 
         </record>
@@ -29,7 +29,7 @@
             <field name="receipt_id"
                    ref="receipt_1"/>
 
-            <field name="product_id" ref="prod_bread"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_bread'))]"/>
             <field name="quantity">50</field>
 
         </record>
@@ -52,7 +52,7 @@
             <field name="receipt_id"
                    ref="receipt_2"/>
 
-            <field name="product_id" ref="prod_water"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_water'))]"/>
             <field name="quantity">100</field>
 
         </record>
@@ -63,7 +63,7 @@
             <field name="receipt_id"
                    ref="receipt_2"/>
 
-            <field name="product_id" ref="prod_juice"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_juice'))]"/>
             <field name="quantity">50</field>
 
         </record>
@@ -86,7 +86,7 @@
             <field name="receipt_id"
                    ref="receipt_3"/>
 
-            <field name="product_id" ref="prod_phone"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_phone'))]"/>
             <field name="quantity">100</field>
 
         </record>
@@ -97,7 +97,7 @@
             <field name="receipt_id"
                    ref="receipt_3"/>
 
-            <field name="product_id" ref="prod_laptop"/>
+            <field name="product_id" search="[('product_tmpl_id', '=', ref('prod_laptop'))]"/>
             <field name="quantity">50</field>
 
         </record>
